@@ -35,6 +35,7 @@
 | [React Router v4  （这个文档只给出示例代码有些简洁） ](http://www.zcfy.cc/article/react-router-v4-the-complete-guide-mdash-sitepoint-4448.html) | [Redux中的connect讲的比较细致](http://blog.csdn.net/q1056843325/article/details/54880804) |
 | [React系列——react 15.5+ 使用CSSTransitionGroup实现路由过渡动画 ](https://segmentfault.com/a/1190000009687861) | [官网路由](https://reacttraining.com/react-router/web/example/route-config) |
 | [react-router4代码分割（配合redux使用react-router的动画）](https://www.jianshu.com/p/e3334a2c08e7) |[Eslint 从入门到放弃](https://www.jianshu.com/p/22e6197e5cff)|
+|[prop-types](https://www.npmjs.com/package/prop-types)||
 
 ### 4.Git
 | [ git子模块](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97) |
