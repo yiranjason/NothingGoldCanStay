@@ -24,8 +24,8 @@
 
 ### 3.React+Redux
 
-|  [ redux中文文档](http://www.redux.org.cn/)  | [React Router v4 之代码分割：从放弃到入门](https://segmentfault.com/a/1190000011426329) |[prop-types](https://www.npmjs.com/package/prop-types)
-| :--------------------------------------: | :--------------------------------------: || :--------------------------------------: |
+|  [ redux中文文档](http://www.redux.org.cn/)  | [React Router v4 之代码分割：从放弃到入门](https://segmentfault.com/a/1190000011426329) |
+| :--------------------------------------: | :--------------------------------------: |
 | [react-redux最佳实践]( https://github.com/sorrycc/blog/issues/1) |  [Redux 中文文档](http://www.redux.org.cn/)  |
 | [Redux 入门教程-阮一峰[旧版]](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.htm) | [阮一峰redux](https://github.com/kenberkeley/redux-simple-tutorial) |
 | [22 个优质的 React 开源项目](https://xituqu.com/201.html) | [React和Redux的连接react-redux](https://www.jianshu.com/p/94c988cf11f3) |
