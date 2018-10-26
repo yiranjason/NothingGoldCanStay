@@ -16,11 +16,12 @@
 | [前端常用插件、工具类库汇总，不要重复造轮子啦！！！](https://juejin.im/post/5ba7d5dd5188255c6140cc9d)|
 |[函数编程lodash](https://lodash.com/)|
 
-### 2.前端工程化工具
+### 2.工具
 
 | [fie]( https://github.com/fieteam/fie) |
 | :------------------------------------: |
 |      [nvm介绍及使用](https://www.jianshu.com/p/d0e0935b150a)            |
+|[AWS云服务（免费一年！！）](https://www.amazonaws.cn/about-aws/select-regions/?sc_channel=PS&sc_campaign=acquisition_CN&sc_publisher=baidu&sc_medium=bz&sc_content=pc&sc_detail=HL&sc_category=pc&sc_segment=test&sc_country=CN&trkCampaign=request_for_pilot_account&trk=baidu-ppc-test)|
 
 ### 3.React+Redux
 
