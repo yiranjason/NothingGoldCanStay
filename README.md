@@ -152,6 +152,7 @@
 |[前端开发者进阶之函数柯里化Currying](https://www.cnblogs.com/pigtail/p/3447660.html)|
 |[简单理解JavaScript中的柯里化和反柯里化](https://www.jianshu.com/p/f5033cec605e)|
 |[TypeScript 在 React 中使用总结](https://juejin.im/post/5bab4d59f265da0aec22629b)|
+|[Promises/A+](https://promisesaplus.com/)|
 
 ### 14.webpack
 
