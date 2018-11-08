@@ -238,5 +238,12 @@
 |[100 days of code](https://www.100daysofcode.com/)|
 |[JavaScript 30](https://javascript30.com/)|
 
+### 26.边玩边学
+|[codingame](https://www.codingame.com/)|
+| :--------------------------------------: |
+|[codecombat](https://e.codecombat.163.com/account/migrate.htm)|
+|[checkio](https://checkio.org/)|
+|[vim-adventures](https://vim-adventures.com/)|
+|[playcodemonkey](https://www.playcodemonkey.com/)|
 
 收集者：慧新
