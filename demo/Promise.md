@@ -80,11 +80,11 @@ class Promise{
 }
 
 new Promise((resolve,reject)=>{
-    resolve("挖坑妹")；
+    resolve("慧新")；
     //异步处理
     //处理结束后、调用resolve或reject
 }).then((data)=>{
-    console.log(data);//"挖坑妹"
+    console.log(data);//"慧新"
 },(reason)=>{
     console.log(reason);
 })
