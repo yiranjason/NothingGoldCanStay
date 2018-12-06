@@ -1,0 +1,172 @@
+
+
+### 正文:
+
+​	在代码示例中我会用到es6中的语言，如果你还不是很了解，你可以看看阮老师的[es6](http://es6.ruanyifeng.com/#README).(= =我也是一点一点跟着看的。)
+
+##### 1.map
+
+​	先说一下最常用的map.利用map方便获得对象数组中的特定属性值们.它返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+
+```javascript
+//将a02品牌的标价全部加100
+const clothesArr=[
+  {username:"sunan",haveA02:false,basePrice:30},
+  {username:"fenshuajiang",haveA02:true,basePrice:10},
+  {username:"huixin",haveA02:true,basePrice:20}
+]
+
+clothesArr.map(
+	item=>item.haveA02?{...item,basePrice:item.basePrice+100:item}
+)
+```
+
+- map() 不会对空数组进行检测。
+
+- map() 不会改变原始数组。
+
+##### 2.filter
+
+​	filter和map相比，它也接受一个函数，并把接受的函数依次作用于每个元素，返回值为true和false,true留下，false扔掉！看看例子~
+
+```javascript
+const filterArr = [1,2,3,4,5,6,7,8,9,10];//这里我只想要3的倍数
+
+const newArr = filterArr.filter((x) => x % 3 == 0);
+
+console.log(newArr);//(3) [3, 6, 9]
+```
+
+这里需要注意：
+
+- filter() 不会对空数组进行检测。
+
+
+- filter() 不会改变原始数组,所以你需要赋值到新数组上。
+
+##### 3.forEach
+
+forEach() 方法用于调用数组的每个元素，并将元素传递给回调函数。forEach方法中的function回调有三个参数：第一个参数是遍历的数组内容，第二个参数是对应的数组索引，第三个参数是数组本身,数组中有几项，那么传递进去的匿名回调函数就需要执行几次.
+
+```javascript
+const forEachArr=[1,2,3,4,5];//计算所有数组的和
+var sum=0;
+forEachArr.forEach((value,index,array)=>{
+    sum+=value;  
+    });
+console.log(sum);//15
+```
+
+这里需要注意：
+
+- forEach() 对于空数组是不会执行回调函数的。
+
+##### 4.for in
+
+说一个比较冷门的,平时只是知道也不怎么用。
+
+```javascript
+const forInArr=[1,2,3,4,5];
+for(let index in forInArr){
+    console.log(index,forInArr[index]);
+}
+//0 1
+//1 2
+//2 3
+//3 4
+//4 5
+```
+
+用for in不仅可以对数组便利,也可以对enumerable（可枚举）对象操作
+
+```javascript
+const forInArr = {a:1,b:2,c:3,d:4};  
+for(let index in forInArr) {  
+    console.log(index,forInArr[index]);  
+} 
+//a 1
+//b 2
+//c 3
+//d 4
+```
+
+##### 5.for of
+
+在es6 中新增了一个 for of 循环，看看例子～
+
+```javascript
+const forOfArr='huixin';
+for(let value of forOfArr) {  
+        console.log(value);  
+};
+```
+
+结果：![1544083419727](/tmp/1544083419727.png)
+
+for in总是得到对像的key或数组,字符串的下标,而for of和forEach一样,是直接得到值
+
+注意：for of不能对对象用
+
+##### 6.set
+
+Set类似于数组，但是成员的值都是唯一的，没有重复的值,也没有索引。用set.size表示伪数组长度
+
+```javascript
+var setArr= [7, 7, 7, 8, 8, 8, 82, 82, 839, 49, 329, 8, 3, 3];//数组去重
+var set = new Set(setArr);
+var newArr = new Array(...set);
+console.log(newArr);//(7) [7, 8, 82, 839, 49, 329, 3]
+```
+
+##### 7.some
+
+这个函数，我觉得只是检测数组中是否有某个元素，符合条件，符合返回true。如果没有满足条件的元素，则返回false。感觉有点像|字符。
+
+```javascript
+var someArr = [2, 13, 18, 20];//检测是否有人小于18岁
+let outcome=someArr.some( (age)=>{ return age<18})
+console.log(outcome);//true
+```
+
+**注意：** some() 不会对空数组进行检测。
+
+**注意：** some() 不会改变原始数组。
+
+##### 8.every
+
+这个函数，检测数组中是否有某个元素，不符合条件，有一个为false,则返回false。如果都满足条件的元素，则返回true。感觉有点像&字符。
+
+```javascript
+var someArr = [2, 13, 18, 20];//检测是否都是未成年
+let outcome=someArr.every((age)=>{ return age<18})
+console.log(outcome);//false
+```
+
+**注意：** every() 不会对空数组进行检测。
+
+**注意：** every() 不会改变原始数组。
+
+##### 9.reduce
+
+​	最后一个，reduce，刚接触前端的时候，我也不明白，现在到是知道那么一丢丢了。这个方法有点不同，4个参数。接收一个函数作为累加器，数组中的每个值（从左到右）开始缩减，最终计算为一个值。
+
+​	prev：它是上一次调用回调时返回的结果，每次调用的结果都会给prev
+
+​	cur：当前的元素
+
+​	index：当前的索引
+
+​	arr：循环的数组
+
+```javascript
+var reduceArr = [1,2,3,4,5]//求和
+ 
+var str = reduceArr.reduce((prev,cur,index,arr)=>{
+	return prev + cur ;
+})
+
+console.log(str);//15
+```
+
+
+
