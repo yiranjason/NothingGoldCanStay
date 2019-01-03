@@ -1,5 +1,3 @@
-
-
 ### 正文:
 
 ​	在代码示例中我会用到es6中的语言，如果你还不是很了解，你可以看看阮老师的[es6](http://es6.ruanyifeng.com/#README).(= =我也是一点一点跟着看的。)
@@ -63,10 +61,10 @@ console.log(sum);//15
 
 ##### 4.for in
 
-说一个比较冷门的,平时只是知道也不怎么用。
+以前觉得这个不常用，但现在真的很感谢有这个函数,因为最近项目中解决了很多问题，尤其是对象拿value值的时候，先来说说对数组的时候怎么用。
 
 ```javascript
-const forInArr=[1,2,3,4,5];
+const forInArr=[1,2,3,4,5]
 for(let index in forInArr){
     console.log(index,forInArr[index]);
 }
@@ -80,28 +78,68 @@ for(let index in forInArr){
 用for in不仅可以对数组便利,也可以对enumerable（可枚举）对象操作
 
 ```javascript
-const forInArr = {a:1,b:2,c:3,d:4};  
-for(let index in forInArr) {  
-    console.log(index,forInArr[index]);  
-} 
-//a 1
-//b 2
-//c 3
-//d 4
+const forInObj={
+  '111':{name:'huixin',size:'m'},
+  '222':{name:'sunan',size:'l'},
+  '333':{name:'fenshuajiang',size:'s'}
+};//这个时候我只想取到value值传给后端，key值不要。
+for(let index in forInObj){
+    console.log(index,forInObj[index]);
+}
+//111 {name: "huixin", size: "m"}
+//222 {name: "sunan", size: "l"}
+//333 {name: "fenshuajiang", size: "s"}
+```
+
+在这里插播一个问题：给你一个对象，去掉里面属性值为null、""或者undefined的属性
+
+```javascript
+let objs={
+  a:false,
+  b:null,
+  c:undefined,
+  d:''
+}
+
+const dataType=(obj)=>{
+    if (obj===null) return "Null";
+    if (obj===undefined) return "Undefined";
+    return Object.prototype.toString.call(obj).slice(8,-1);
+};
+
+const filtrateValue=(obj)=>{
+    var param = {};
+    if ( obj === null || obj === undefined || obj === "" ) return param;
+    for ( var key in obj ){
+        if ( dataType(obj[key]) === "Object" ){
+            param[key] = filtrateValue(obj[key]);
+        }else if(  obj[key] !== null && obj[key] !== undefined && obj[key] !== ""  ){
+            param[key] = obj[key];
+        }
+    }
+    return param;
+};
+filtrateValue(objs);
+
+//{a: false}
 ```
 
 ##### 5.for of
 
-在es6 中新增了一个 for of 循环，看看例子～
+在es6 中新增了一个 for of 循环，这个还没怎么用过，以后要多用才能记得住，看看例子～
 
 ```javascript
 const forOfArr='huixin';
 for(let value of forOfArr) {  
         console.log(value);  
 };
+//h
+//u
+//i
+//x
+//i
+//n
 ```
-
-结果：![1544083419727](/tmp/1544083419727.png)
 
 for in总是得到对像的key或数组,字符串的下标,而for of和forEach一样,是直接得到值
 
@@ -168,5 +206,19 @@ var str = reduceArr.reduce((prev,cur,index,arr)=>{
 console.log(str);//15
 ```
 
+10.Object.keys(obj)
 
+朋友小机灵又帮我添加了一个，可以遍历对象
 
+```javascript
+const forInObj={
+  '111':{name:'huixin',size:'m'},
+  '222':{name:'sunan',size:'l'},
+  '333':{name:'fenshuajiang',size:'s'}
+};
+Object.keys(forInObj).map(item=>console.log(item,forInObj[item]));
+
+//111 {name: "huixin", size: "m"}
+//222 {name: "sunan", size: "l"}
+//333 {name: "fenshuajiang", size: "s"}
+```
