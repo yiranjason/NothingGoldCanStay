@@ -248,4 +248,7 @@
 |[vim-adventures](https://vim-adventures.com/)|
 |[playcodemonkey](https://www.playcodemonkey.com/)|
 
+### 27.个人学习
+|[webpack](https://github.com/EndeavorNo1/NothingGoldCanStay/tree/master/demo/webpack)|
+
 收集者：慧新
