@@ -1,6 +1,7 @@
 # 2019.1.3
 
 #### 一、Webpack4
+这个作者写的很详细，适合初学者
 
 学习路径：https://juejin.im/post/5c25b76ef265da614b120ed0
 
