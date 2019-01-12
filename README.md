@@ -249,6 +249,6 @@
 |[playcodemonkey](https://www.playcodemonkey.com/)|
 
 ### 27.个人学习
-|[webpack](https://github.com/EndeavorNo1/NothingGoldCanStay/tree/master/demo/webpack)|
+|[webpack](https://github.com/EndeavorNo1/NothingGoldCanStay/tree/master/demo/webpack)|[react高阶组件]()
 
 收集者：慧新
