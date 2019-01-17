@@ -98,6 +98,7 @@
 |[CSS font-family 各名称一览表](https://blog.csdn.net/cddcj/article/details/70739481)|
 |[CSS常见各种布局](https://lhammer.cn/You-need-to-know-css/#/)|
 |[CSS-Grid布局](https://www.zhangxinxu.com/wordpress/2018/11/display-grid-css-css3/)|
+|[使用线性渐变实现滚动进度条](https://codepen.io/Chokcoco/pen/KbBXQM?editors=1100)|
 ### 9.Vue
 
 | [基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用](https://github.com/bailicangdu/vue2-elm) |
