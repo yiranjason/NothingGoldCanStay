@@ -2,7 +2,7 @@
 
 今天在修改遗留问题的时候遇到一个bug,进入页面点击活动二维码现实的model没有图片，是这样事儿的
 
-![1547545361462](/tmp/1547545361462.png)
+![1547545361462](https://github.com/EndeavorNo1/NothingGoldCanStay/blob/master/demo/react-study/reactProblem/p1.png)
 
 首次点击 加载不出图像 。
 
