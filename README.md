@@ -106,7 +106,7 @@
 | [vue2 + vue-router + vuex 入门项目](https://github.com/bailicangdu/vue2-happyfri) |
 | [Vue视频](https://juejin.im/post/5a5bc8c36fb9a01ca26774eb) |
 | [如何在Vue项目中使用vw实现移动端适配](https://www.w3cplus.com/mobile/vw-layout-in-vue.html) |
-|                                          |
+| [vue书写规范](https://lq782655835.github.io/blogs/team-standard/recommend-code200.html) |
 
 ### 10.项目
 
